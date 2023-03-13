@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contactos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../Style/contact.css">
+        
+    </head>
+    <body>
+      <div class="side-bar">
+        <img src="../Assets/ProfilePoc.JPG" alt="profile">
+        <div class="Menu">
+          <button type="button" onclick="window.location.href='index.html';" class="Inicio">Inicio</button>
+          <button type="button" onclick="window.location.href='info.html';" class="Informacion">Informacion</button>
+            <button type="button" onclick="window.location.href='skills.html';"class="Habilidades">Habilidades</button>
+            <button type="button" class="contact">Contacto</button>
+        </div>
+      </div>
+      <div class="form-container" style="position: center; top: 0px; right: 0; width: 30%;">
+          <h1>Contacto</h1>
+          <form action="process-form.php" method="POST">
+            <form>
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre">
+            
+              <label for="fecha">Fecha de nacimiento:</label>
+              <input type="date" id="fecha" name="fecha">
+            
+              <label for="correo">Correo electrónico:</label>
+              <input type="email" id="correo" name="correo">
+            
+              <label for="telefono">Número de contacto:</label>
+              <input type="tel" id="telefono" name="telefono">
+            
+              <label for="pais">País:</label>
+              <select id="pais" name="pais">
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+                <option value="peru">Perú</option>
+                <option value="espana">España</option>
+                <option value="estados-unidos">Estados Unidos</option>
+              </select>
+            
+              <label for="genero">Género:</label>
+              <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+              </select>
+            
+              <label for="color">Color favorito:</label>
+              <input type="color" id="color" name="color">
+            
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            
+              <input type="submit" value="Enviar">
+            </form>
+         </form>
+        <div class="results-table"style="position: right; top: 40px; right: 155px; width: 30%;">
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <td>User Uno</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>User1@sdq.com</td>
+            </tr>
+            <tr>
+              <th>contacto</th>
+              <td>(809)111-1111)</td>
+            </tr>
+            <tr>
+              <th>Mensaje</th>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="results-table"style="position: right; top: 280px; right: 155px; width: 30%;">
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <td>User Dos</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>user2@sdq.com</td>
+            </tr>
+            <tr>
+              <th>contacto</th>
+              <td>(809)222-2222)</td>
+            </tr>
+            <tr>
+              <th>Mensaje</th>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</td>
+            </tr>
+          </table>
+        </div>
+        <div class="results-table"style="position: right; top: 530px; right: 155px; width: 30%;">
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <td>User Tres</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>user3@sdq.com</td>
+            </tr>
+            <tr>
+              <th>contacto</th>
+              <td>(809)333-3333)</td>
+            </tr>
+            <tr>
+              <th>Mensaje</th>
+              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.</td>
+            </tr>
+          </table>
+        </div>
+    </body>
+</html>
